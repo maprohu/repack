@@ -41,6 +41,17 @@ object RunInstallRepackJars {
         "2.8",
         "libdbus-java",
         Some("sources")
+      ),
+      run(
+        "dbus-bin",
+        "2.8",
+        "libdbus-java"
+      ),
+      run(
+        "dbus-bin",
+        "2.8",
+        "libdbus-java",
+        Some("sources")
       )
     )
 
