@@ -52,6 +52,11 @@ object RunInstallRepackJars {
         "2.8",
         "libdbus-java",
         Some("sources")
+      ),
+      run(
+        "jsyn",
+        "16.7.6",
+        "com.jsyn"
       )
     )
 
