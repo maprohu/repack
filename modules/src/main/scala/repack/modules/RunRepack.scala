@@ -19,7 +19,7 @@ object RunRepack {
   )
 
   val Modules = Seq[ConfiguredModule](
-//    RepackModules.DBus
+    RepackModules.Modules
   )
 
   def main(args: Array[String]): Unit = {

@@ -2,6 +2,7 @@ package repack.modules
 
 import maven.modules.builder._
 import maven.modules.utils.MavenCentralModule
+import mvnmod.modules.MvnmodModules
 
 
 /**
@@ -15,6 +16,12 @@ object RepackModules extends MavenCentralModule(
 
   implicit val Root = RootModuleContainer("repack")
 
+  object Modules extends ScalaModule(
+    "modules",
+    MvnmodModules.Builder,
+    MvnmodModules.Modules
+  )
+
 //  object DBus extends ScalaModule(
 //    "dbus",
 //    mvn.`libmatthew-debug-java:debug-disable:jar:1.1`,
@@ -26,8 +33,3 @@ object RepackModules extends MavenCentralModule(
 
 
 
-object MavenModulesBuilder extends MavenCentralModule(
-  "maven-modules",
-  "maven-modules-builder",
-  "1.0.0-SNAPSHOT"
-)
