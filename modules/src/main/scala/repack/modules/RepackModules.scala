@@ -1,8 +1,8 @@
 package repack.modules
 
 import maven.modules.builder._
-import maven.modules.utils.MavenCentralModule
 import mvnmod.modules.MvnmodModules
+import mvnmod.poms.MavenCentralModule
 
 
 /**
