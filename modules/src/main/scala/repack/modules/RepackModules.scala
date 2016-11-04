@@ -1,8 +1,8 @@
 package repack.modules
 
 import maven.modules.builder._
+import mvnmod.builder.{MavenCentralModule, RootModuleContainer, ScalaModule}
 import mvnmod.modules.MvnmodModules
-import mvnmod.poms.MavenCentralModule
 
 
 /**
@@ -18,8 +18,8 @@ object RepackModules extends MavenCentralModule(
 
   object Modules extends ScalaModule(
     "modules",
-    MvnmodModules.Builder,
-    MvnmodModules.Modules
+    MvnmodModules.Builder.R2,
+    MvnmodModules.Modules.R1
   )
 
 //  object DBus extends ScalaModule(

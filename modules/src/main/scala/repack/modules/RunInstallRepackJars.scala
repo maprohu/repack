@@ -2,7 +2,7 @@ package repack.modules
 
 import java.io.File
 
-import maven.modules.builder.MavenTools
+import mvnmod.builder.MavenTools
 
 /**
   * Created by martonpapp on 02/10/16.

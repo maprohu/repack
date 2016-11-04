@@ -2,8 +2,9 @@ package repack.modules
 
 import java.io.File
 
-import maven.modules.builder.Module.ConfiguredModule
-import maven.modules.builder.{Module, ModuleContainer, NamedModule, PlacedRoot}
+import mvnmod.builder.Module.ConfiguredModule
+import maven.modules.builder.{ModuleContainer, NamedModule, PlacedRoot}
+import mvnmod.builder.{Module, ModuleContainer, NamedModule, PlacedRoot}
 
 import scala.collection.immutable._
 
